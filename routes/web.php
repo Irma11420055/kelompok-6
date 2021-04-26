@@ -17,6 +17,36 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/detail', function () {
+    return view('detail');
+});
+
+Route::get('/novel', function () {
+    return view('novel');
+});
+
+Route::get('/cerpen', function () {
+    return view('cerpen');
+});
+
+Route::get('/komik', function () {
+    return view('komik');
+});
+
+Route::get('/biografi', function () {
+    return view('biografi');
+});
+
+Route::get('/ensiklopedia', function () {
+    return view('ensiklopedia');
+});
+
+Route::get('/dongeng', function () {
+    return view('dongeng');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
